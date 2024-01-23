@@ -1,0 +1,708 @@
+/*STYLE TO REMOVE ALL PADDING AND MARGIN FOR WEBSITES*/
+*{
+    padding:0;
+    margin:0;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/*STYLE TO REMOVE CSS FOR SIDEBAR AND ASIDE ELEMENTS*/
+.clear{
+    clear:both;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/*STYLE FOR FONT OF WEBPAGE*/
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+}
+/*//////////////////////////////////////////////////////////*/
+/* STYLE FOR ERROR MESSAGE FOR ASIDE BOX */
+
+#asideBoxErrorMessage{
+    margin-left: 83.5%;
+}
+
+/* STYLE FOR HEADER HTML ELEMENTS */
+
+.headerTitle{
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+.headerQuote{
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+/*//////////////////////////////////////////////////////////*/
+/* STYLE FOR HEADSHOT IMAGE ELEMENT */
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding:0;
+    margin:0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.image img{
+    display: block;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    margin-right:90%;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    position: relative;
+    top:-80px;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/*STYLE FOR CONTAINER ELEMENT FOR CONTENT OF HTML PAGE*/
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top:-75px;
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+/*STYLE FOR CONTENT ELEMENTS FOR CONTENT OF HTML PAGE*/
+
+.contentSection{
+    float:left;
+    width:70%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    font-size: 23px;
+    line-height: 2;
+}
+
+.indent{
+    text-indent: 50px;
+}
+
+.firstParagraph{
+    padding-bottom: 15px;
+}
+
+.secondParagraph{
+    padding-bottom: 15px;
+}
+
+.thirdParagraph{
+    padding-bottom: 30px;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+
+/*STYLE FOR DISPLAY GREETING ABOVE CONTENT OF HTML PAGE*/
+
+#displayGreeting{
+    font-size:40px;
+    font-family:'Playfair Display', serif;
+    padding-bottom: 20px;
+    padding-top:0px;
+    position: relative;
+    width:50%;
+    font-weight: bold;
+    font-style: italic;
+    display: inline;
+    
+}
+/*//////////////////////////////////////////////////////////*/
+
+/*STYLE POP UP WINDOW//////////////////////////////////////*/
+.popUp .overLay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popUp .content{
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 850px;
+    height: 400px;
+    z-index:2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popUp .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width:30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius:50%;
+}
+
+.popUp.active .overLay{
+    display: block;
+}
+
+.popUp.active .content{
+    transition: all 300ms ease ease-in-out;
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.popUp h1{
+    font-size: 40px;
+}
+
+.content li span{
+    margin-top: 10px;
+    position: relative;
+    left:-10px;
+    top:30px;
+    font-size: 30px;
+    line-height: 1.8;
+}
+
+.content ul{
+    list-style: none;
+    margin-top: 3%;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/* STYLE FOR NAV HTML ELEMENTS /////////////////////////////////*/
+
+.navigationBar{
+    background-color: lightblue;
+    position: relative;
+    min-width: 320px;
+    margin-bottom: 20px;
+    top:-90px;
+}
+
+nav a{
+    color: black;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav li{
+    position:relative;
+    top:-5px;
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    padding-left:5em;
+    padding-right:5em;
+    font-family: 'Playfair Display', serif;
+    font-size:25px;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.navigationBorder{
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    height: 24px;
+    width: 100%;
+    text-align: center;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/* STYLE FOR YOUTUBE VIDEO /////////////////////////////////*/
+.iframe-container{
+    position: relative;
+    width:100%;
+    padding-top:2%;
+}
+
+.iframe-container iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    border:2px black dashed;
+    width: 100%;
+}
+
+#videoCaption{
+    color:black;
+    font-size: 19px;
+}
+/*//////////////////////////////////////////////////////////*/
+/* STYLE FOR ASIDE HTML ELEMENTS /////////////////////////////////*/
+
+.asideBox{
+    background-color: lightblue;
+    border:2px black solid;
+    padding: 5px;
+    border-radius: 15px;
+    float:right;
+    width:30%;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    position: relative;
+    bottom:-20px;
+}
+
+.asideBox label{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.asideBox b{
+    font-size: 30px;
+}
+
+#nameBox{
+    width:80%;
+    height:30px;
+    text-align: center;
+    padding:5px 0;
+    margin:auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+#commentsBox{
+    display: block;
+    text-align: center;
+    padding:0;
+    height:10em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Playfair Display', serif;
+    resize: none;
+    font-size: 20px;
+}
+#ratingBox{
+    width:10%;
+    text-align: center;
+    padding:0;
+    margin:auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.asideTextBox{
+    display: block;
+    padding: auto;
+}
+
+.asideBox input[type="text"]{
+    margin:auto;
+}
+
+.asideBox button{
+    background-color: #333;
+    color:#fff; 
+    display: block;
+    margin-top:10px;
+    position: relative;
+}
+
+#submitButton{
+    width:75%;
+    padding: 15px 5px;
+    position: relative;
+    margin:auto;
+    margin-top:5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    
+}
+
+#submitButton value{
+    text-align: center;
+}
+#submitButton:hover{
+    background-color: red;
+    color: white;
+}
+#clearButton{
+    width:40%;
+    padding: 15px 5px;
+    position: relative;
+    margin:auto;
+    margin-top:5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    background-color: #333;
+    color: #fff;
+}
+
+#clearButton:hover{
+    background-color: red;
+    color: white;
+}
+
+#clearButton value{
+    text-align: center;
+}
+
+.asideForm small{
+    position:relative;
+    left:9%;
+    padding:0;
+    visibility: hidden;
+}
+
+#asideBoxTitle{
+    font-size:20px;
+}
+.asideBox p{
+    text-align: center;
+    margin:auto;
+    padding:0px;
+    margin: 0px;
+    color:red;
+    
+}
+
+#videoCaption{
+    font-size: 25px;
+}
+
+.iframe-container{
+    position: relative;
+    width:100%;
+    padding-top:2%;
+}
+
+.iframe-container iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    border:2px black dashed;
+}
+
+/*//////////////////////////////////////////////////////////*/
+h3{
+    color: black;
+}
+
+
+/* STYLE FOR FOOTER HTML ELEMENTS /////////////////////////////////*/
+.footerElement{
+    width: 100%;
+    height:200px;
+    margin: auto;
+    text-align: center;
+    border-top: 2px black solid;
+    background-color:lightblue;
+    font-size: 23px;
+    line-height: 1.5;
+
+}
+
+#time{
+    font-weight: bold;
+}
+/*//////////////////////////////////////////////////////////*/
+
+/* STYLE MEDIA QUERIES /////////////////////////////////*/
+
+ @media (min-width: 62em) {
+    font-size: 1.9em;
+    letter-spacing: 0.2rem;
+  }
+}
+h2 {
+  font: {
+    size: 1.1em;
+    weight: 400;
+  }
+  max-width: 30rem;
+  margin: auto;
+}
+}
+
+div.item {
+display: flex;
+flex: auto;
+overflow-y: auto;
+padding: 30px;
+font-size: 19px;
+height: 5000px;
+}
+
+#timeline {
+position: relative;
+display: table;
+}
+
+.computer{
+  border-radius: 20px;
+  text-align: center;
+}
+
+.resume-title{
+  text-align: center;
+}
+
+@media (max-width:1200px){
+  .headerTitle{
+      display: block;
+  }
+        
+  .headerQuote{
+      display: block;
+  }
+  
+  .image{
+      display: block;
+  }
+
+  #headshot{
+      display: block;
+      margin: auto;
+      position: relative;
+      top:9px;
+  }
+  .navigationBar{
+      position: relative;
+      min-width: 320px;
+      margin-bottom: 20px;
+      top:20px;
+  }
+  nav li{
+      font-size:20px;
+  }
+  .container{
+      top:40px;
+  }
+  .footerElement{
+      height: 40%;
+      position: relative;
+      top:50px;
+  }
+  #displayGreeting{
+      display: inline;
+      font-size: 30px;
+  }
+  .firstParagraph{
+      padding-top: 15px;
+  }
+  .asideBox{
+      bottom:-10px;
+  }
+  .footerElement{
+  width: 100%;
+  height:170%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  border-top: 2px black solid;
+  background-color:lightblue;
+  font-size: 23px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  }
+}
+
+
+@media (max-width:950px){
+  nav li{
+      font-size:20px;
+      padding:0 40px 0;
+      text-align: center;
+  }
+  
+  #displayGreeting{
+      font-size:25px;
+      display: inline;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #displayGreeting p {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .contentSection{
+      font-size: 20px;
+      width:100%;
+      clear: left;
+  }
+  .asideBox{
+      display: flex;
+      justify-content: center;
+      clear: both;
+      width: 40%;
+      right:30%;
+  }
+  .firstParagraph{
+      padding-top: 20px;
+  }
+  #ratingBox{
+      width:20%;
+  }
+
+  .popUp .content{
+      width: 650px;
+      height: 380px;
+  }
+  
+  .popUp h1{
+      font-size: 30px;
+  }
+
+  .content li span{
+      position: relative;
+      left:-10px;
+      top:30px;
+      font-size: 25px;
+      line-height: 1.8;
+  }
+  .footerElement{
+      width: 100%;
+      height:170%;
+      margin: auto;
+      overflow: hidden;
+      text-align: center;
+      border-top: 2px black solid;
+      background-color:lightblue;
+      font-size: 23px;
+      line-height: 1.5;
+      padding-bottom: 30px;
+      }
+}
+
+@media (max-width:814px){
+  .headerTitle{
+    font-size: 29px;
+  }
+}
+
+@media (max-width:719px){
+nav li{
+  padding:0 40px 0;
+  font-size:20px;
+  text-align: center;
+}
+}
+
+@media (max-width:594px){
+  nav li{
+    padding:0 20px 0;
+    font-size:18px;
+    text-align: center;
+  }
+  .footerElement{
+      width: 100%;
+      height:170%;
+      margin: auto;
+      overflow: hidden;
+      text-align: center;
+      border-top: 2px black solid;
+      background-color:lightblue;
+      font-size: 23px;
+      line-height: 1.5;
+      padding-bottom: 30px;
+}
+
+#displayGreeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+
+}
+
+@media (max-width:440px){
+  nav li{
+    display: block;
+    margin-left:25px;
+    font-size: 20px;
+  }
+  .navigationBar{
+      height:100px;
+  }
+  .navigationBorder{
+      height:96px;
+  }
+  .asideBox{
+      width:250px;
+      position: relative;
+      right:60px;
+}
+#displayGreeting{
+  display: inline;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle{
+  line-height: 1;
+}
+.footerElement{
+  width: 100%;
+  height:170%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  border-top: 2px black solid;
+  background-color:lightblue;
+  font-size: 23px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  }
+
+}
+@media(max-width:518px){
+#displayGreeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+}
+
+@media(max-width: 599px;){
+    li{
+        position: top;
+        top:5px;
+    }
+}
+}
