@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type ="text/css" href="CSS Files/index.css">
+    <link rel="icon" type="image/x-icon" href = "favicon-standard.png">
+    <title>Introductory Website</title>
+
+    <meta charset="utf-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale:1.0">
+<body>
+<!--THIS IS THE HEADER ELEMENT OF THE WEBPAGE-->
+    <header>
+        <p class = "headerTitle">The Career Path of Andrew Alphonza McNeill</p>
+        <p class = "headerQuote">The Progressive Realization Of A Worthy Ideal - Earl Nightingale</p>
+    <div class = "image">
+        <img id = "headshot" src= "Image Files/headshot.jpg" alt="Head Shot Photo">
+        <div class = "imageOverLay"></div>
+    </div>
+    </header>
+
+<!--THIS IS THE NAVIGATION ELEMENT OF THE WEBAPGE-->
+        
+    <nav class = "navigationBar">
+        <div class = "navigationBorder">
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="resume.html">Resume</a></li>
+                <!--<li><a href ="extracurricurals.html">Extra-Curriculars</a></li>-->
+        </ul>
+        </div>
+    </nav>
+
+
+<!--THIS IS THE DIV ELEMENT FOR THE ERROR MESSAGR FOR ASIDEBOX-->
+
+
+<!--THIS IS THE OPENING TAG FOR THE CONTAINER DIV OF THE WEBAPGE-->
+    <div class = "container">
+
+
+<!--THIS IS THE GREETING ELEMENT ABOVE WEBPAGE CONTENT OF THE WEBAPGE-->
+    <p id = "displayGreeting"></p>
+
+
+<!--THIS IS THE SECTION ELEMENT OF THE WEBPAGE IS THE ARTICLE ELEMENTS-->
+    <div class = "contentSection">
+        <section class = "firstParagraph">
+            <article>
+                <p>
+                    My name is Andrew A. McNeill, and I am a 22-year-old recent graduate hoping to 
+                    advance in the web development industry. I earned a Bachelor of Science in Information 
+                    Technology during my academic career at Towson University. Additionally, I'm a graduate 
+                    student at Towson University studying computer science in order to further my education and 
+                    increase my knowledge in web development. I've held a variety of technology-related jobs 
+                    throughout my career, including information desk assistant for information and computational 
+                    sciences, front end web developer, information technology support student, computer support 
+                    assistant, and currently information technology specialist.
+                </p>
+            </article>
+        </section>
+
+        <section class = "secondParagraph">
+            <article>
+                <p>
+                    Towson University introduced me to the various technological fields, such as software development, web development, database administration, and data science, that I could enter.
+                    Web technologies, advanced data management and analysis, fundamentals of systems administration, applied data mining and visual analysis, and other courses are only a few of the subjects that these four 
+                    professional sectors provide to the information technology degree curriculum.
+                    The Towson University curriculum was excellent since it allowed me to take classes in which my interests would shift depending on the semester. After my first semester at Towson University was through, 
+                    I decided that I wanted to work as a database administrator, the next semester a security analyst, data scientist, and lastly web developer.Due to my success in a basic HTML and CSS course, web development is the area of technology in which I am most interested.
+                    My final project in the course was a five-page website,
+                    and I decided that web development would be my future. I made the decision to study JavaScript after reading Jon Duckett's book JavaScript with jQuery, which enabled me to give websites more features.
+                    Making this website has allowed me to make use of the Towson University curriculum and produce a project that I might add to my résumé while looking for full-time jobs in web development.
+                </p>
+            </article>
+        </section>
+
+        <section class = "thirdParagraph">
+            <article>
+                    <p>
+                        Since it involves three exciting components, web development is the career path I'll pursue. Front-end development, back-end development, and full-stack development are the three components. 
+                        The fact that there are three components allows me to keep working on new projects and offers my work an agile mindset. The creation of graphical user interfaces for websites using HTML5, CSS3, and JavaScript is the responsibility of front-end development.
+                        The methods used by PHP, Python, and JavaScript to process data and carry out actions on websites are built and maintained by back-end development. Website front-end interfaces and back-end procedures are made by full-stack developers.I was able to practice my front-end abilities while building this website because I used HTML5, CSS3, and JavaScript to make an interactive interface. 
+                        I additionally learned how to upload a website from a local computer to the internet and the features of websites. I'll soon acquire up the relevant back-end development skills as my web development career progresses in order to achieve my ultimate goal of becoming a full stack developer.
+                    </p>
+            </article>
+        </section>
+    </div>
+
+<!--THIS IS THE ASIDE ELEMENT FOR THE FORM ELEMENT-->
+        <div class = "asideBox">
+            <aside>
+                <label for = "asideBox" id = "asideBoxTitle"><b>Website Review Form</b></label>
+                    <form action = "#" id ="asideFormID" class = "asideForm" method="post">
+                        <label for = "name">Name:</label>
+                        <input name = "name" type = "text" id = "nameBox" maxlength = "50" minlength="1" value = "" required/>
+                        <p id = "nameError">Value for Name Is Not Alphanumeric Try Again</p>
+
+                        <label for = "">Website Comments:</label>
+                        <textarea name = "comments" type = "text" id ="commentsBox" rows = "4" cols ="20" wrap="physical"
+                        maxlength="300" minlength="10" required></textarea>
+                        <p id = "commentsError">Value for Comments Is Not Alphanumeric Try Again</p>
+
+                        <label for = "">Website Rating:</label>
+                        <input name = "rating" type = "number" id = "ratingBox" value = "" maxlength="2" minlength="1" min="0" max="10" required/>
+                        <p id ="ratingError">Rating Value Must Be A Number 10 & Under</p>
+
+                        <button type ="submit" id = "submitButton" href = "#" value = "Submit">Submit Website Response
+                        <button type ="reset" id = "clearButton" value = "Clear">Clear Form 
+                        
+                    </form>
+                    
+            </aside>
+              
+        </div>
+
+        <div class = "asideBox">
+            <aside>
+                <div class = "iframe-container">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/5YDVJaItmaY" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                </div>
+                <p id =  "videoCaption">Web Development Explained</p>
+            </aside>
+        </div>
+
+<!--THE END OF THE CONTAINER FOR THE HTML CONTENT-->  
+    </div>
+
+<!--THIS IS THE FOOTER ELEMENT OF THE WEBAPGE-->
+    <div class = "footerElement">   
+        <footer>
+            <h1>Contact Us:</h1>
+            <h3>Email: mcneillandrew088@gmail.com</h3>
+            <h3>Phone Number: 1-800-INTR-OSITE</h3>
+            <p id = "time" class = "footerDisplay"></p>
+        </footer>
+    </div>  
+
+<!--JAVASCRIPT LINK-->
+<script src="JavaScript Files/index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Lc3zs6bIz4GD_Bebr");
+   })();
+</script>
+
+</body>
+</html>
